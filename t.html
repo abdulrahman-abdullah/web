@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="t.css">
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="menu">
+        <div class="category" id="activity">
+            <h2>Activity</h2>
+            <div class="items-container"></div>
+        </div>
+        <div class="category" id="event">
+            <h2>Event</h2>
+            <div class="items-container"></div>
+        </div>
+        <div class="category" id="courses">
+            <h2>Courses</h2>
+            <div class="items-container"></div>
+        </div>
+    </div>
+    <button id="add-item">Add Item</button>
+
+    <!-- Add Item Form -->
+    <div id="add-item-form" style="display: none;">
+        <h1>Add New Item</h1>
+        <form>
+            <label for="category">Category:</label>
+            <select name="category" id="form-category">
+                <option value="activity">Activity</option>
+                <option value="event">Event</option>
+                <option value="courses">Courses</option>
+            </select>
+
+            <label for="image-url">Image URL:</label>
+            <input type="url" name="image-url" id="form-image-url" required>
+
+            <label for="description">Description:</label>
+            <textarea name="description" id="form-description" required></textarea>
+
+            <input type="submit" value="Add Item">
+        </form>
+    </div>
+    <script src="t.js"></script>
+</body>
+</html>
